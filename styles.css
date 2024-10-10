@@ -1,0 +1,224 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  height: 100vh;
+  font-family: 'Verdana', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.freecodecamp-logo {
+  height: 30px;
+  margin: 25px 0;
+}
+
+h1 {
+  color: #FEDD00;
+  font-size: 2.5em;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  width: 350px;
+  margin: 25px 0;
+  background-color: #ffffff;
+  border: 5px solid #d62d2f;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.output,
+#search-form {
+  display: flex;
+  justify-content: center;
+}
+
+#search-form {
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  background-color: #d62d2f;
+  color: #fff;
+}
+
+label {
+  align-self: center;
+}
+
+#search-input {
+  height: 40px;
+  padding-left: 10px;
+  width: 300px;
+  border-radius: 20px;
+  border: 2px solid #d62d2f;
+  margin-right: 20px;
+}
+
+#search-input:focus {
+  outline: none;
+  border: 2px solid #7f21ab;
+}
+
+#search-button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #4b4b4b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #3d3d3d;
+}
+
+.output {
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-container,
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 325px;
+}
+
+.bottom-container {
+  min-height: 275px;
+}
+
+@keyframes dropIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.top-container {
+  padding: 10px;
+  background-color: #e0e0e0;
+  display: none;
+  animation: dropIn 0.5s ease-in;
+}
+
+.name-and-id {
+  height: 28px;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  color: #d62d2f;
+}
+
+.size {
+  height: 22px;
+  font-size: 0.85rem;
+}
+
+.sprite-container {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sprite {
+  width: 180px;
+  border-radius: 15px;
+  border: 5px solid #d62d2f;
+}
+
+#types {
+  min-height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.type {
+  padding: 5px;
+  font-size: 0.85rem;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1rem;
+  color: #f5f6f7;
+  background-color: #4b4b4b;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  background-color: #d62d2f;
+}
+
+tr {
+  border-bottom: 2px solid #f5f6f7;
+}
+
+td {
+  background-color: #4b4b4b;
+}
+
+.normal { background-color: #b7b7aa; }
+.fire { background-color: #ff6f52; }
+.water { background-color: #42a1ff; }
+.electric { background-color: #fecc33; }
+.grass { background-color: #78cc55; }
+.ice { background-color: #66ccfe; }
+.fighting { background-color: #d3887e; }
+.poison { background-color: #c68bb7; }
+.ground { background-color: #dfba52; }
+.flying { background-color: #8899ff; }
+.psychic { background-color: #ff66a3; }
+.bug { background-color: #aabb23; }
+.rock { background-color: #baaa66; }
+.ghost { background-color: #9995d0; }
+.dragon { background-color: #9e93f1; }
+.dark { background-color: #b59682; }
+.steel { background-color: #abaabb; }
+.fairy { background-color: #ed99ed; }
+
+@media screen and (min-width: 550px) {
+  h1 {
+    font-size: 3em;
+  }
+  .container {
+    width: 450px;
+  }
+  .type {
+    width: 75px;
+  }
+}
